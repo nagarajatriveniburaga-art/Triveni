@@ -45,7 +45,7 @@ if prompt:
 
 
 
-            response = client.chat.completions.create(
+    response = client.chat.completions.create(
                 model="llama-3.1-8b-instant",
                 messages=st.session_state.chat
             )
