@@ -51,7 +51,7 @@ if prompt:
             )
 
 
-            reply = response.choices[0].message.content
+    reply = response.choices[0].message.content
 
 
             
@@ -62,6 +62,7 @@ if prompt:
         "role": "assistant",
         "content": reply
     })
+    st.rerun()
 
 
 
